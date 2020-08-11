@@ -1,0 +1,63 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.button{
+   -fx-background-radius:30px;
+    -fx-margin:0px 8px 0px 8px;
+    -fx-font-family: prototype;
+    -fx-font-size:20px;
+    -fx-font-weight:bold;
+    -fx-text-fill:white;
+}
+#AnchorPane{
+    -fx-background-color: black;
+     -fx-background-radius:5px;
+}
+.grey{
+       -fx-background-color: #A6A6A8;
+}
+.darkgrey{
+       -fx-background-color: #332D29;
+}
+.orange{
+       -fx-background-color: #FE9400;
+}
+
+
+.orange:hover {
+    -fx-background-color: white;
+    -fx-text-fill:#FE9400;
+    -fx-font-size:25px;
+}
+.darkgrey:hover{
+       -fx-background-color: #A6A6A8;
+       -fx-text-fill:black;
+       -fx-font-size:25px;
+}
+.grey:hover{
+       -fx-background-color: white;
+          -fx-text-fill:black;
+          -fx-font-size:25px;
+}
+
+
+.orange:pressed {
+    -fx-background-color: #FE9400;
+     -fx-text-fill:white;
+    
+}
+.darkgrey:pressed{
+    -fx-background-color: #FE9400;
+}
+.grey:pressed{
+    -fx-background-color: #FE9400;
+}
+#affiche{
+    -fx-text-alignment:right;
+    -fx-alignment:CENTER_RIGHT;
+     -fx-text-fill:white;
+     -fx-font-size:50px;
+     -fx-font-family: prototype;
+      -fx-font-weight: bold;
+}

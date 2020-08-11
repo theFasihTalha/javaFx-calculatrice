@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="287.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.Controller">
+    <stylesheets>
+        <URL value="@calculator.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutY="-1.0" prefHeight="409.0" prefWidth="304.0">
+         <children>
+            <Label fx:id="affiche" prefHeight="116.0" prefWidth="288.0" />
+            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="304.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#clear" prefHeight="56.0" prefWidth="132.0" styleClass="grey" text="AC">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="67.0" layoutY="10.0" mnemonicParsing="false" onAction="#getOperateur" prefHeight="56.0" prefWidth="57.0" styleClass="grey" text="\%">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="124.0" layoutY="10.0" mnemonicParsing="false" onAction="#getOperateur" prefHeight="56.0" prefWidth="57.0" styleClass="orange" text="/">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="120.0" prefHeight="72.0" prefWidth="304.0">
+               <children>
+                  <Button layoutX="67.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text="7">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="124.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text="8">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="91.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text="9">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="91.0" layoutY="10.0" mnemonicParsing="false" onAction="#getOperateur" prefHeight="56.0" prefWidth="57.0" styleClass="orange" text="x">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="182.0" prefHeight="72.0" prefWidth="304.0">
+               <children>
+                  <Button layoutX="67.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text="4">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="124.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text="5">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="91.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text="6">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="91.0" layoutY="10.0" mnemonicParsing="false" onAction="#getOperateur" prefHeight="56.0" prefWidth="57.0" styleClass="orange" text="-">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="244.0" prefHeight="71.0" prefWidth="304.0">
+               <children>
+                  <Button layoutX="67.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text="1">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="124.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text="2">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="91.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text="3">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="91.0" layoutY="10.0" mnemonicParsing="false" onAction="#getOperateur" prefHeight="56.0" prefWidth="57.0" styleClass="orange" text="+">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="306.0" prefHeight="60.0" prefWidth="304.0">
+               <children>
+                  <Button layoutX="67.0" layoutY="10.0" mnemonicParsing="false" onAction="#getNb" prefHeight="56.0" prefWidth="128.0" styleClass="darkgrey" text="0">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="91.0" layoutY="10.0" mnemonicParsing="false" onAction="#getOperateur" prefHeight="56.0" prefWidth="57.0" styleClass="darkgrey" text=".">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="91.0" layoutY="10.0" mnemonicParsing="false" onAction="#getOperateur" prefHeight="56.0" prefWidth="57.0" styleClass="orange" text="=">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
